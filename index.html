@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Individuals</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <form name="sign-up" aria-label="sign up">
+        <header>
+          <img
+            class="logo"
+            src="./assets/images/Logo.svg"
+            alt=""
+            role="none"
+            width="98"
+            height="100"
+          />
+          <h1 class="title">For Individuals</h1>
+          <p class="text">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </header>
+
+        <div>
+          <section class="form-controls">
+            <div class="form-group">
+              <label class="label" for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="fname"
+                autocomplete="given-name"
+                aria-describedby="error-fname"
+              />
+              <span id="error-fname" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                class="lname"
+                autocomplete="given-name"
+                aria-describedby="error-lname"
+              />
+              <span id="error-lname" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="gender">Gender</label>
+              <select
+                name="gender"
+                id="gender"
+                aria-describedby="error-gender"
+                class="gender"
+              >
+                <option value="">Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <span id="error-gender" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="birth-date">Date of Birth</label>
+              <input
+                type="date"
+                name="birth-date"
+                id="birth-date"
+                class="birth-date"
+                aria-describedby="error-birth-date"
+              />
+              <span class="error" id="error-birth-date"></span>
+            </div>
+            <div class="form-group">
+              <label class="label" for="weight">Weight (KG)</label>
+              <input
+                type="text"
+                id="weight"
+                name="weight"
+                class="weight"
+                aria-describedby="error-weight"
+              />
+              <span id="error-weight" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="height">Height (CM)</label>
+              <input
+                type="text"
+                id="height"
+                name="height"
+                class="height"
+                aria-describedby="error-height"
+              />
+              <span id="error-height" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="password">Password</label>
+              <div>
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  class="password"
+                  aria-describedby="error-password"
+                />
+                <span class="password-visible"
+                  ><img
+                    class="icon"
+                    src="./assets/images/show.svg"
+                    alt=""
+                    role="none"
+                /></span>
+              </div>
+              <span id="error-password" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <button class="button" type="submit">Register</button>
+            </div>
+          </section>
+
+          <footer>
+            <p>
+              By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our
+              <a href="#">Privacy Policy</a>
+            </p>
+          </footer>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
