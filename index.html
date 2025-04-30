@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up | Individuals</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -12,11 +13,11 @@
         <header>
           <img
             class="logo"
-            src="./assets/images/Logo.svg"
+            src="./assets/images/Logo-2.svg"
             alt=""
             role="none"
-            width="98"
-            height="100"
+            width="38.67"
+            height="40"
           />
           <h1 class="title">For Individuals</h1>
           <p class="text">
@@ -75,6 +76,7 @@
                 name="birth-date"
                 id="birth-date"
                 class="birth-date"
+                min="2007-01-01"
                 aria-describedby="error-birth-date"
               />
               <span class="error" id="error-birth-date"></span>
@@ -86,6 +88,8 @@
                 id="weight"
                 name="weight"
                 class="weight"
+                inputmode="numeric"
+                pattern="\d{0,4}"
                 aria-describedby="error-weight"
               />
               <span id="error-weight" class="error" aria-live="polite"></span>
@@ -98,28 +102,49 @@
                 id="height"
                 name="height"
                 class="height"
+                inputmode="numeric"
+                pattern="\d{0,4}"
                 aria-describedby="error-height"
               />
               <span id="error-height" class="error" aria-live="polite"></span>
             </div>
 
-            <div class="form-group">
+            <div class="form-group form-group-100">
+              <label class="label" for="level">Active Level</label>
+              <select
+                name="level"
+                id="level"
+                aria-describedby="error-level"
+                class="level"
+              >
+                <option value="">Select here</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <span id="error-level" class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group form-group-100">
               <label class="label" for="password">Password</label>
-              <div>
+              <div class="password-container">
                 <input
-                  type="text"
+                  type="password"
                   id="password"
                   name="password"
                   class="password"
                   aria-describedby="error-password"
                 />
-                <span class="password-visible"
-                  ><img
+                <button class="password-visible">
+                  <img
                     class="icon"
                     src="./assets/images/show.svg"
                     alt=""
                     role="none"
-                /></span>
+                  />
+                </button>
               </div>
               <span id="error-password" class="error" aria-live="polite"></span>
             </div>
